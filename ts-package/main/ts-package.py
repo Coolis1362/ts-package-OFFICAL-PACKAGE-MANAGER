@@ -10,7 +10,7 @@ def check_for_git():
             time.sleep(0.05)
 
         # Check Git version
-        exit_code = os.system("git --version")
+        exit_code = os.system("\ngit --version")
         if exit_code != 0:
             print("\nGit is not installed or not found in PATH.")
             return False
