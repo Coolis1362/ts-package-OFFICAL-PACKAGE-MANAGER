@@ -12,9 +12,6 @@ Welcome to **ts-package**, the official package manager for the TS ecosystem! De
 - **Dependency-Free Installation**  
   Handle packages without the hassle of external dependencies.
 
-- **Custom Repositories**  
-  Support for unique TS-specific repositories and `.tspkg` formats.
-
 ---
 
 ## Getting Started
