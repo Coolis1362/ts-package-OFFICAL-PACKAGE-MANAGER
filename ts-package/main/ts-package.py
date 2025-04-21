@@ -16,3 +16,9 @@ def ts_package():
                     os.system("git clone https://github.com/Coolis1362/TS-DISTRO-MAIN-VERSIONS")
                 except Exception as e:
                     print(f"ts-package install Coolis1362/TS-DISTRO-MAIN-VERSIONS: ERROR FOUND: ERROR CODE 792: {e}")
+
+
+
+
+if __name__ == "__main__":
+    ts_package()
