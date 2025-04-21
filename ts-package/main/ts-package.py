@@ -1,5 +1,23 @@
 import os
 import sys
+import time
+
+def check_for_git():
+    try:
+        # Progress bar
+        for step in range(100):
+            print("#", end="", flush=True)
+            time.sleep(0.05)
+
+        # Check Git version
+        exit_code = os.system("git --version")
+        if exit_code != 0:
+            print("\nGit is not installed or not found in PATH.")
+        else:
+            print("\nGit is installed and accessible.")
+    except Exception as e:
+        print(f"Error occurred: {e}")
+
 
 def ts_package():
     VERSION = "1.0.0"
