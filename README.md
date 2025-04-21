@@ -34,7 +34,7 @@ To get started with ts-package, follow these steps:
 git clone https://github.com/Coolis1362/ts-package-OFFICAL-PACKAGE-MANAGER
 ```
 
-1. Navigate to the directory
+1. Navigate to the directory:
 2. Run the initial Batch File:
 
 ```bash
