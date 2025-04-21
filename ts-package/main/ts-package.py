@@ -36,6 +36,8 @@ def ts_package():
                 os.system(f"git clone https://github.com/Coolis1362/{install_input}")
             except Exception as e:
                 print(f"ts-package install Coolis1362/{install_input}: ERROR FOUND: ERROR CODE 792: {e}")
+        elif install_input == "Coolis1362":
+            print("you Can't Install this GitHub Resp")
 
 
 
