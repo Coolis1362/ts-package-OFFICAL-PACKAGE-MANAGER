@@ -13,8 +13,10 @@ def check_for_git():
         exit_code = os.system("git --version")
         if exit_code != 0:
             print("\nGit is not installed or not found in PATH.")
+            return False
         else:
             print("\nGit is installed and accessible.")
+            return True
     except Exception as e:
         print(f"Error occurred: {e}")
 
@@ -40,4 +42,5 @@ def ts_package():
 
 
 if __name__ == "__main__":
-    ts_package()
+    if check_for_git():
+        ts_package()
