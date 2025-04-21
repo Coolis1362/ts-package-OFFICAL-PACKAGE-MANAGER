@@ -28,15 +28,20 @@ def ts_package():
     while True:
         user_input = input(">> ts-package ")
 
+        if user_input.lower() == "exit":
+            print("Exiting ts-package. Goodbye!")
+            sys.exit(0)
+
         if user_input == "install":
             install_input = input(">> ts-package install Coolis1362/")
-            if install_input:
+
+            if install_input.lower() == "Coolis1362":
+                print("Error: Repository Coolis1362/Coolis1362 cannot be installed via ts-package.")
+            else:
                 try:
                     os.system(f"git clone https://github.com/Coolis1362/{install_input}")
                 except Exception as e:
                     print(f"ts-package install Coolis1362/{install_input}: ERROR FOUND: ERROR CODE 792: {e}")
-        elif install_input == "Coolis1362":
-            print("you Can't Install this GitHub Resp")
 
 
 
