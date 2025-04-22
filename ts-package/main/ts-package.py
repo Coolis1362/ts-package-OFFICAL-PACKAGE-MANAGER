@@ -18,7 +18,7 @@ def check_for_git():
             print("\nGit is installed and accessible.")
             return True
     except Exception as e:
-        print(f"Error occurred: {e}")
+        print(f"Error occurred: ERROR CODE 689: {e}")
 
 
 def ts_package():
