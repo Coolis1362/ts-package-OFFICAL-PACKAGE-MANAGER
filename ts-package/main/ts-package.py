@@ -22,7 +22,7 @@ def check_for_git():
 
 
 def ts_package():
-    VERSION = "1.0.1"
+    VERSION = "1.0.2"
     GITHUBURL = "https://github.com/Coolis1362/ts-package-OFFICAL-PACKAGE-MANAGER"
     print(f"ts-package PACKAGE MANAGER VERSION: {VERSION}")
     print("Type In 'help' For Commands")
