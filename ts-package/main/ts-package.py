@@ -47,11 +47,11 @@ def ts_package():
         if user_input == "git":
             git_input = input(">> ts-package git ")
 
-            if git_input == "init":
+            if git_input:
                 print("Rechecking Ig Git Is Installed...\n")
                 try:
                     if check_for_git():
-                        os.system("git init")
+                        os.system(f"git {git_input}")
                     else:
                         print("git can't be found existing")
                         time.sleep(1)
